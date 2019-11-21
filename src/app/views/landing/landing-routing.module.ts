@@ -37,7 +37,7 @@ const routes: Routes = [
     component: LandingV5Component
   },
   {
-    path: "v6",
+    path: "home",
     component: LandingV6Component
   }
   ,
@@ -46,7 +46,7 @@ const routes: Routes = [
     component: LandingV7Component
   },
 
-   {
+  {
     path: "v8",
     component: LandingV8Component
   },
@@ -68,7 +68,7 @@ const routes: Routes = [
     path: "blog-details",
     component: BlogDetailsPageComponent
   },
-   {
+  {
     path: "demos",
     component: DemosComponent
   }

@@ -15,17 +15,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeLayoutComponent } from './components/layouts/home-layout/home-layout.component';
 
 
 const exportedClasses = [
   AuthLayoutComponent,
-
-
-
   ScrollToDirective,
-
   LandingLayoutComponent,
-
+  HomeLayoutComponent
 ];
 
 
@@ -34,4 +31,4 @@ const exportedClasses = [
   declarations: exportedClasses,
   exports: exportedClasses
 })
-export class SharedModule {}
+export class SharedModule { }
