@@ -8,7 +8,7 @@ import { HomeLayoutComponent } from './shared/components/layouts/home-layout/hom
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/landing/demos',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
