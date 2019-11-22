@@ -30,11 +30,13 @@ export class HeaderComponent implements OnInit {
       this.document.documentElement.scrollTop ||
       this.document.body.scrollTop ||
       0;
-    if (offset > 10) {
-      this.isFixed = true;
-    } else {
-      this.isFixed = false;
-    }
+      console.log("offset"+offset)
+    // if (offset > 0) {
+    //   this.isFixed = true;
+    // } else {
+    //   this.isFixed = false;
+    // }
+    this.isFixed=true;
   }
 
   @HostBinding("class.menu-opened") menuOpened = false;
