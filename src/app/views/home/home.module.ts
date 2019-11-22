@@ -52,6 +52,11 @@ import { DemosComponent } from './components/demos/demos.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { BlogDetailsPageComponent } from './blog-details-page/blog-details-page.component';
 import { IntroElevenComponent } from './components/intro-eleven/intro-eleven.component';
+import { AboutComponent } from './components/about/about.component';
+import { CareerComponent } from './components/career/career.component';
+import { PartnerComponent } from './components/partner/partner.component';
+import { SupportComponent } from './components/support/support.component';
+import { SocialLandingComponent } from './components/social-landing/social-landing.component';
 
 
 @NgModule({
@@ -100,6 +105,11 @@ import { IntroElevenComponent } from './components/intro-eleven/intro-eleven.com
         BlogDetailsComponent,
         BlogDetailsPageComponent,
         IntroElevenComponent,
+        AboutComponent,
+        CareerComponent,
+        PartnerComponent,
+        SupportComponent,
+        SocialLandingComponent,
     ],
     providers: [WINDOW_PROVIDERS]
 

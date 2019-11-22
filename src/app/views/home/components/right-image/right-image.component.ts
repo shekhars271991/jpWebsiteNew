@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NguCarouselConfig } from "@ngu/carousel";
+import { NguCarouselConfig, NguCarouselStore } from "@ngu/carousel";
 @Component({
   selector: "app-right-image",
   templateUrl: "./right-image.component.html",
@@ -22,23 +22,14 @@ export class RightImageComponent implements OnInit {
     {
       photo: "./assets/images/landing/svg/slider4.svg"
       // photo: "./assets/images/landing/app_screenshots/550/04.png"
-    },
-    {
-      photo: "./assets/images/landing/svg/slider5.svg"
-      // photo: "./assets/images/landing/app_screenshots/550/05.png"
-    },
-    {
-      photo: "./assets/images/landing/svg/slider6.svg"
-      // photo: "./assets/images/landing/app_screenshots/550/01.png"
-    }
+    },    
   ];
   public carouselTiles = {
     0: [],
     1: [],
     2: [],
     3: [],
-    4: [],
-    5: []
+    
   };
   public carouselTile: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
@@ -47,12 +38,39 @@ export class RightImageComponent implements OnInit {
     point: {
       visible: true
     },
+    interval: {
+      timing: 3000,
+      initialDelay: 1000
+    },
     load: 1,
+    loop:true,
     velocity: 0,
     touch: true,
     easing: "cubic-bezier(0, 0, 0.2, 1)"
   };
-  constructor() {}
+  private isSelected:number;
+  private counter:number;
+  constructor() {
+    this.isSelected=1;
+    this.counter=1; 
+  }
 
-  ngOnInit() {}
+  onmoveFn(data: NguCarouselStore) {   
+    this.counter++;
+    if(this.counter>4){
+      this.counter=1;
+    }
+    this.isSelected=this.counter;
+    
+    console.log("hii",data);
+  }
+  setCounter(){
+    this.counter-=2;
+    console.log("prev val");
+  }
+ 
+  ngOnInit() {
+   
+    
+  }
 }
