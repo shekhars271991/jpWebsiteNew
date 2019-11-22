@@ -16,19 +16,23 @@ export class ContactFormComponent implements OnInit {
     'message': null,
 
   };
- staticAlertClosed : true;
+  staticAlertClosed: true;
   error = null;
   success: any = null;
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log("Hello");
+  }
 
   submitForm(form: NgForm) {
     this.formValues.email = form.value.email;
     this.formValues.name = form.value.name;
     this.formValues.subject = form.value.subject;
     this.formValues.message = form.value.message;
-    this.success=true;
+
+    console.log("Message", this.formValues.message);
+    this.success = true;
 
 
 
