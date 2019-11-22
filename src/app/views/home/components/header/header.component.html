@@ -4,7 +4,7 @@
 
         <div class="d-flex flex-grow-1 mobile_menu">
             <span class="w-100 d-lg-none d-block">
-    <!-- hidden spacer to center brand on mobile --></span>
+                <!-- hidden spacer to center brand on mobile --></span>
             <!-- <a class="navbar-brand d-none d-lg-inline-block" href="#">
     Navbar 6
   </a> -->
@@ -12,12 +12,13 @@
                 <img src="assets/images/landing/lOGO_d/logo_white.png" alt="logo">
             </a>
             <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-      <span class="navbar-toggler-icon">
-<i class="eva eva-menu-outline text-30 text-white"></i>
-      </span>
+                <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon">
+                        <i class="eva eva-menu-outline text-30 text-white"></i>
+                    </span>
 
-    </button>
+                </button>
             </div>
         </div>
         <div class="collapse  navbar-collapse flex-grow-1 text-right" id="collapseExample" [ngbCollapse]="isCollapsed">
@@ -29,24 +30,27 @@
                     <a href="#" scrollTo="features-wrap" class="nav-link m-2 menu-item nav-active">Features</a>
                 </li> -->
                 <li (click)="hidemenu()" class="nav-item">
-                    <a href="#" scrollTo="services-wrap" class="nav-link m-2 menu-item">Services</a>
+                    <a href="#" scrollTo="services-wrap" class="nav-link m-2 menu-item">Who we are</a>
                 </li>
                 <!-- drop down menu start -->
                 <li class="nav-item">
-                    <a class="nav-link m-2 menu-item">Other Sections</a>
+                    <a class="nav-link m-2 menu-item">Others</a>
                     <!-- First  Drop Down -->
                     <ul>
                         <li (click)="hidemenu()" class="nav-item">
-                            <a href="#" scrollTo="teams-wrap" class="  menu-item">Team</a>
+                            <a href="#" scrollTo="teams-wrap" class="  menu-item">Chefs</a>
                         </li>
                         <li (click)="hidemenu()" class="nav-item">
-                            <a href="#" scrollTo="testimonials-wrap" class="  menu-item">Testimonial</a>
+                            <a href="#" scrollTo="testimonials-wrap" class="  menu-item">Testimonials</a>
+                        </li>
+                        <li (click)="hidemenu()" class="nav-item">
+                            <a href="#" scrollTo="faqs-wrap" class="  menu-item">FAQ</a>
                         </li>
                         <!-- <li (click)="hidemenu()" class="nav-item">
                             <a href="#" scrollTo="extra-feature-wrap" class="  menu-item">Extra features</a>
                         </li> -->
-                        <li><a>Second Level</a>
-                            <!-- Second  Drop Down -->
+                        <!-- <li><a>Second Level</a>
+
                             <ul>
                                 <li (click)="hidemenu()" class="nav-item">
                                     <a href="#" scrollTo="news-wrap" class="  menu-item">Blog</a>
@@ -55,7 +59,7 @@
                                     <a href="#" scrollTo="faqs-wrap" class="  menu-item">Faqs</a>
                                 </li>
                                 <li><a>Third Level</a>
-                                    <!-- Third  Drop Down -->
+                                    
                                     <ul>
                                         <li><a href="#">Menu Item</a></li>
                                         <li><a href="#">Menu Item</a></li>
@@ -63,11 +67,11 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <!-- drop down menu end -->
-                
+
                 <li (click)="hidemenu()" class="nav-item">
                     <a href="#" scrollTo="contacts-wrap" class="nav-link m-2 menu-item">Contact Us</a>
                 </li>
