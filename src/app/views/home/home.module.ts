@@ -57,6 +57,7 @@ import { CareerComponent } from './components/career/career.component';
 import { PartnerComponent } from './components/partner/partner.component';
 import { SupportComponent } from './components/support/support.component';
 import { SocialLandingComponent } from './components/social-landing/social-landing.component';
+import { AllFaqsComponent } from './components/all-faqs/all-faqs.component';
 
 
 @NgModule({
@@ -110,6 +111,7 @@ import { SocialLandingComponent } from './components/social-landing/social-landi
         PartnerComponent,
         SupportComponent,
         SocialLandingComponent,
+        AllFaqsComponent,
     ],
     providers: [WINDOW_PROVIDERS]
 

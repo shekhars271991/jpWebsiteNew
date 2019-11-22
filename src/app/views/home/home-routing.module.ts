@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingV6Component } from './landing-v6/landing-v6.component';
 
 import { DemosComponent } from './components/demos/demos.component';
+import { AllFaqsComponent } from "./components/all-faqs/all-faqs.component";
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
     {
         path: "blog-details",
         component: BlogDetailsPageComponent
+    },
+    {
+        path: "all-faqs",
+        component: AllFaqsComponent
     },
     {
         path: "demos",
