@@ -61,8 +61,7 @@ export class RightImageComponent implements OnInit {
       this.counter=1;
     }
     this.isSelected=this.counter;
-    
-    console.log("hii",data);
+  
   }
   setCounter(){
     this.counter-=2;

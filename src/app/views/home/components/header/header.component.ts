@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
       this.document.documentElement.scrollTop ||
       this.document.body.scrollTop ||
       0;
-      console.log("offset"+offset)
+     
     // if (offset > 0) {
     //   this.isFixed = true;
     // } else {
