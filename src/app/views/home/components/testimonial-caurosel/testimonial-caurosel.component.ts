@@ -27,36 +27,12 @@ export class TestimonialCauroselComponent implements OnInit {
       user_image: "./assets/images/landing/faces/5.jpg",
       user_name: "Micheal Clark",
       user_designation: "Marketing Manager"
-    },
-    {
-      testimonial: `Adipisci quas repellat sed. Quasi quaerat aut nam possimus
-    vitae dignissimos, sapiente est atque tenetur`,
-      user_image: "./assets/images/landing/faces/12.jpg",
-      user_name: "Jassica june",
-      user_designation: "Frontend Developer"
-    },
-    {
-      testimonial: `Adipisci quas repellat sed. Quasi quaerat aut nam possimus
-    vitae dignissimos, sapiente est atque tenetur`,
-      user_image: "./assets/images/landing/faces/13.jpg",
-      user_name: "Gray Simon",
-      user_designation: "Production Leader"
-    },
-    {
-      testimonial: `Adipisci quas repellat sed. Quasi quaerat aut nam possimus
-    vitae dignissimos, sapiente est atque tenetur`,
-      user_image: "./assets/images/landing/faces/5.jpg",
-      user_name: "Jhone Doe",
-      user_designation: "Software Engineer"
     }
   ];
   public carouselTiles = {
     0: [],
     1: [],
-    2: [],
-    3: [],
-    4: [],
-    5: []
+    2: []
   };
   public carouselTile: NguCarouselConfig = {
     grid: { xs: 1, sm: 2, md: 3, lg: 3, all: 0 },
@@ -70,7 +46,7 @@ export class TestimonialCauroselComponent implements OnInit {
     touch: true,
     easing: "cubic-bezier(0, 0, 0.2, 1)"
   };
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

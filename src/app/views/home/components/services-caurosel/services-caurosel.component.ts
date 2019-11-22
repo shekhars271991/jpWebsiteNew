@@ -8,7 +8,7 @@ import { NguCarouselConfig } from "@ngu/carousel";
 export class ServicesCauroselComponent implements OnInit {
   public carouselTileItems: Array<any> = [
     {
-      icon: "./assets/images/landing/services/service1.svg",
+      icon: "./assets/images/landing/services/whyus1.jpg",
       text: `Adipisci quas repellat sed. Quasi quaerat aut nam possimus
     vitae dignissimos, sapiente est atque tenetur`,
       title: "Service One"
