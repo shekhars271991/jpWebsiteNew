@@ -8,6 +8,11 @@ import { LandingV6Component } from './landing-v6/landing-v6.component';
 
 import { DemosComponent } from './components/demos/demos.component';
 import { AllFaqsComponent } from "./components/all-faqs/all-faqs.component";
+import { AboutComponent } from "./components/about/about.component";
+import { CareerComponent } from "./components/career/career.component";
+import { PartnerComponent } from "./components/partner/partner.component";
+import { SupportComponent } from "./components/support/support.component";
+import { SocialLandingComponent } from "./components/social-landing/social-landing.component";
 
 
 const routes: Routes = [
@@ -24,8 +29,24 @@ const routes: Routes = [
         component: AllFaqsComponent
     },
     {
-        path: "demos",
-        component: DemosComponent
+        path: "about",
+        component: AboutComponent
+    },
+    {
+        path: "career",
+        component: CareerComponent
+    },
+    {
+        path: "partner",
+        component: PartnerComponent
+    },
+    {
+        path: "support",
+        component: SupportComponent
+    },
+    {
+        path: "social",
+        component: SocialLandingComponent
     }
 ];
 
