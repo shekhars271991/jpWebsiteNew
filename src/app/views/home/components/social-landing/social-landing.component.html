@@ -1,13 +1,13 @@
-<app-sub-page-header></app-sub-page-header>
+<!-- <app-sub-page-header></app-sub-page-header> -->
 
 <section id="intro-wrap" class="intro-six-Wrap  text-left text-white bg-image">
         <!-- <img src="./assets/images/header.jpg" alt="Smiley face" > -->
     <div class="container">
         <div class="row">
             <div class="col-md-6 intro-six-LeftSection pb-5">
-                <h1 class="introTitle font-weight-bold text-white text-42 mb-3 t-shadow">Jeerapowder
-                </h1>
-                <p class="introDescription text-20 mb-4">Get Expert chefs to cook you a delicious meal in your own
+                <a routerLink="/home" routerLinkActive="active"><h1 class="introTitle font-weight-bold text-white text-42 mb-3 t-shadow">Jeerapowder
+                </h1></a>
+                <p class="introDescription text-20 mb-4">Get Expert chefs to cook you a ravishing meal in your own
                     kitchen.</p>
                 <div class=" mb-5 lead">
                     <ul class="list-inline">
@@ -16,6 +16,10 @@
 
                         <li class="mb-3"><i class="eva eva-checkmark-outline mr-2 text-warning"></i> Cooked - as you want it</li>
                     </ul>
+                </div>
+                <div>
+                    <img src="./assets/images/google-play-badge.svg" id="google-play-img" class="img-responsive phone-img" alt=""
+                        [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}"> 
                 </div>
                 <!-- <div class="intro-six-Buttons">
                     <a name="" id="" routerLink="/sessions/signin"
@@ -35,10 +39,10 @@
             </div>
             <div class="col-md-6 intro-six-RightSection d-flex align-items-center"  id="google-play-img">
 
-                <div class="intro-six-ProductImage">
+                <!-- <div class="intro-six-ProductImage">
                     <img src="./assets/images/google-play-badge.svg" id="google-play-img" class="img-responsive phone-img" alt=""
                         [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}"> 
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
