@@ -13,6 +13,8 @@ import { CareerComponent } from "./components/career/career.component";
 import { PartnerComponent } from "./components/partner/partner.component";
 import { SupportComponent } from "./components/support/support.component";
 import { SocialLandingComponent } from "./components/social-landing/social-landing.component";
+import { AllServicesComponent } from "./components/all-services/all-services.component";
+import { GalleryComponent } from "./components/gallery/gallery.component";
 
 
 const routes: Routes = [
@@ -47,6 +49,14 @@ const routes: Routes = [
     {
         path: "social",
         component: SocialLandingComponent
+    },
+    {
+        path: "services",
+        component: AllServicesComponent
+    },
+    {
+        path: "gallery",
+        component: GalleryComponent
     }
 ];
 

@@ -59,6 +59,8 @@ import { SupportComponent } from './components/support/support.component';
 import { SocialLandingComponent } from './components/social-landing/social-landing.component';
 import { AllFaqsComponent } from './components/all-faqs/all-faqs.component';
 import { SubPageHeaderComponent } from './components/sub-page-header/sub-page-header.component';
+import { AllServicesComponent } from './components/all-services/all-services.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 @NgModule({
@@ -114,6 +116,8 @@ import { SubPageHeaderComponent } from './components/sub-page-header/sub-page-he
         SocialLandingComponent,
         AllFaqsComponent,
         SubPageHeaderComponent,
+        AllServicesComponent,
+        GalleryComponent,
     ],
     providers: [WINDOW_PROVIDERS]
 
