@@ -9,18 +9,18 @@ export class RightImageComponent implements OnInit {
   public carouselTileItems: Array<any> = [
     {
       // photo: "./assets/images/landing/app_screenshots/550/01.png"
-      photo: "./assets/images/landing/svg/slider1.svg"
+      photo: "./assets/images/landing/svg/page1.png"
     },
     {
-      photo: "./assets/images/landing/svg/slider2.svg"
+      photo: "./assets/images/landing/svg/page2.png"
       // photo: "./assets/images/landing/app_screenshots/550/02.png"
     },
     {
-      photo: "./assets/images/landing/svg/slider3.svg"
+      photo: "./assets/images/landing/svg/page3.png"
       // photo: "./assets/images/landing/app_screenshots/550/03.png"
     },
     {
-      photo: "./assets/images/landing/svg/slider4.svg"
+      photo: "./assets/images/landing/svg/step6.png"
       // photo: "./assets/images/landing/app_screenshots/550/04.png"
     },    
   ];
