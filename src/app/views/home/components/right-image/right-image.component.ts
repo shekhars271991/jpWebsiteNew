@@ -48,10 +48,10 @@ export class RightImageComponent implements OnInit {
     touch: true,
     easing: "cubic-bezier(0, 0, 0.2, 1)"
   };
-  private isSelected:number;
-  private counter:number;
-  private isLeftButtonDisabled;
-  private isRightButtonDisabled;
+  isSelected:number;
+   counter:number;
+  isLeftButtonDisabled;
+   isRightButtonDisabled;
   
 
   constructor() {
