@@ -50,9 +50,14 @@ export class RightImageComponent implements OnInit {
   };
   private isSelected:number;
   private counter:number;
+  private isLeftButtonDisabled;
+  private isRightButtonDisabled;
+  
+
   constructor() {
     this.isSelected=1;
     this.counter=1; 
+  
   }
 
   onmoveFn(data: NguCarouselStore) {   
@@ -60,13 +65,18 @@ export class RightImageComponent implements OnInit {
     if(this.counter>4){
       this.counter=1;
     }
-    this.isSelected=this.counter;
+    //this.disableButton();
+    this.isSelected=this.counter;   
   
   }
   setCounter(){
     this.counter-=2;
+    if(this.counter<0){
+      this.counter=3;
+    }
     console.log("prev val");
   }
+
  
   ngOnInit() {
    
