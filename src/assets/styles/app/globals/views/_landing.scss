@@ -379,7 +379,7 @@
     width: 100%;
   }
   .navbar-toggler {
-    padding: 5px 0px;
+    // padding: 5px 0px 10px 5px;
     font-size: 1.25rem;
     line-height: 1;
     // background-color: #6a05c3;
@@ -390,6 +390,8 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+    float:right;
+    margin-bottom: 29px;
     .navbar-toggler-icon {
       background: $gray-800;
     }
