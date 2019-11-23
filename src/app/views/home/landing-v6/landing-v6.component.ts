@@ -10,10 +10,13 @@ export class LandingV6Component implements OnInit {
   showCustomizer = false;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.backgroundColor = "landing-gray";
+  }
 
   changeBg(colorName) {
-    this.backgroundColor = "landing-" + colorName;
+    console.log("jjj",colorName)
+    this.backgroundColor = "landing-gray";
   }
   toggleCustomizer() {
     this.showCustomizer = !this.showCustomizer;

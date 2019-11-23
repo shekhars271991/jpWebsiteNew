@@ -1,0 +1,16 @@
+.bg-image {
+    background-image: url("~/assets/images/header.jpg");
+    background-repeat:no-repeat;
+// background-size:contain;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:cover;
+overflow: hidden;
+position: relative;
+}
+#google-play-img{
+    width:60%;
+    float: right;
+}

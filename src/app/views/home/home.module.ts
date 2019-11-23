@@ -58,6 +58,7 @@ import { PartnerComponent } from './components/partner/partner.component';
 import { SupportComponent } from './components/support/support.component';
 import { SocialLandingComponent } from './components/social-landing/social-landing.component';
 import { AllFaqsComponent } from './components/all-faqs/all-faqs.component';
+import { SubPageHeaderComponent } from './components/sub-page-header/sub-page-header.component';
 
 
 @NgModule({
@@ -112,6 +113,7 @@ import { AllFaqsComponent } from './components/all-faqs/all-faqs.component';
         SupportComponent,
         SocialLandingComponent,
         AllFaqsComponent,
+        SubPageHeaderComponent,
     ],
     providers: [WINDOW_PROVIDERS]
 

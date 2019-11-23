@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-md-12 section-header mb-5">
                 <h2 class="font-weight-bold">How it works?</h2>
-                <p>Its all simple as it can be.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ea quam laborum, ducimus,
+                    laboriosam sint dolorum aspernatur libero.</p>
 
             </div>
 
@@ -19,8 +20,7 @@
                                 <div class="">
                                     <h4 class="card-title font-weight-bold">Search
                                     </h4>
-                                    <p class="m-0">Choose from a list for all the chefs available near your location in
-                                        the selected time and date.
+                                    <p class="m-0">Choose from a list for all the chefs available near your location in the selected time and date.   
                                     </p>
                                 </div>
 
@@ -36,8 +36,7 @@
                                 <!-- <div class="mr-2"><i class="eva eva-clock-outline mr-1 text-36 "></i></div> -->
                                 <div class="">
                                     <h4 class="card-title font-weight-bold"> Select</h4>
-                                    <p class="m-0">Select all the dishes you would like the chef to cook and the number
-                                        of people he will cook for.
+                                    <p class="m-0">Select all the dishes you would like the chef to cook and the number of people he will cook for. 
                                     </p>
                                 </div>
 
@@ -53,8 +52,7 @@
                                 <!-- <div class="mr-2"><i class="eva eva-lock-outline mr-1 text-36 "></i></div> -->
                                 <div class="">
                                     <h4 class="card-title font-weight-bold">Book</h4>
-                                    <p class="m-0">Check for the ingredients/appliances needed for the dishes and
-                                        complete booking.
+                                    <p class="m-0">Check for the ingredients/appliances needed for the dishes and complete booking.
                                     </p>
                                 </div>
 
@@ -71,8 +69,7 @@
                                 <div class="">
                                     <h4 class="card-title font-weight-bold">Enjoy
                                     </h4>
-                                    <p class="m-0">The chef will reach your home at the selected time and cook you
-                                        dishes you chose.
+                                    <p class="m-0">The chef will reach your home at the selected time and cook you dishes you chose.
                                     </p>
                                 </div>
 
@@ -86,29 +83,20 @@
             <!-- end of col6 row -->
             <div class="col-md-12 col-lg-5 col-sm-12 offset-lg-1">
 
-                <ngu-carousel #myCarousel [inputs]="carouselTile" (onMove)="onmoveFn($event)"
-                    [dataSource]="carouselTileItems">
+                <ngu-carousel #myCarousel [inputs]="carouselTile"  (onMove)="onmoveFn($event)" [dataSource]="carouselTileItems">
                     <ngu-tile *nguCarouselDef="let item; let i = index">
 
 
                         <img class="img-responsive  mb-4 " [src]="item.photo" alt="Card image cap">
 
-
-
-
-
                     </ngu-tile>
 
-                    <span NguCarouselPrev
-                        class="ngu_control_button half-button  leftRs btn btn-circle btn-white btn-shadow"
-                        [style.opacity]="myCarousel.isFirst ? 0.5:1" (click)="setCounter()"><i
-                            class="eva eva-chevron-left-outline"></i></span>
-                    <span NguCarouselNext
+                    <button NguCarouselPrev
+                        class="ngu_control_button half-button left-butt leftRs btn btn-circle btn-white btn-shadow"
+                        (click)="setCounter()" [disabled]="isLeftButtonDisabled"><i class="eva eva-chevron-left-outline"></i></button>
+                    <button NguCarouselNext
                         class="ngu_control_button half-button  rightRs btn btn-circle btn-white btn-shadow"
-                        [style.opacity]="myCarousel.isLast ? 0.5:1"><i class="eva eva-chevron-right-outline"></i></span>
-
-
-
+                        [disabled]="isRightButtonDisabled"><i class="eva eva-chevron-right-outline"></i></button>
                 </ngu-carousel>
             </div>
 
