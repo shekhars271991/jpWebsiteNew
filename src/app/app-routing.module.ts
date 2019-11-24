@@ -21,16 +21,17 @@ const routes: Routes = [
       }
     ]
   },
-  {
-    path: '',
-    component: LandingLayoutComponent,
-    children: [
-      {
-        path: 'landing',
-        loadChildren: './views/landing/landing.module#LandingModule'
-      }
-    ]
-  },
+  // },
+  // {
+  //   path: '',
+  //   component: LandingLayoutComponent,
+  //   children: [
+  //     {
+  //       path: 'landing',
+  //       loadChildren: './views/landing/landing.module#LandingModule'
+  //     }
+  //   ]
+  // },
   {
     path: '',
     component: HomeLayoutComponent,
