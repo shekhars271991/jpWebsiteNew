@@ -1,205 +1,151 @@
-    <app-sub-page-header></app-sub-page-header>
+<app-sub-page-header></app-sub-page-header>
 
-    <section id="intro-wrap" class="blog-details-wrap">
-        <div class="blog_header p-t-b-80 ">
+<section id="intro-wrap" class="blog-details-wrap">
+    <div class="blog_header p-t-b-80 ">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-white">
-                        <h1 class="mt-4 text-white">Frequently asked questions</h1>                       
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="faqs-wrap p-t-b-80 " id="faqs-wrap">
-        <!-- <app-header></app-header> -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12 section-header mb-5">
-                    <p>Following are some frequently asked questions.</p>
-
+                <div class="col-md-12 text-white">
+                    <h1 class="mt-4 text-white">Frequently asked questions</h1>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 mb-md-0  mb-4">
-                    <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
-                        <ngb-panel title="I don’t see any chefs around my location">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    We are constantly working on growing our fleet of chefs, but unfortunately to curate
-                                    the
-                                    bests it takes some time. Bear with us, and keep checking your app. We are
-                                    adding new chefs everyday.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <ngb-panel title="Are the chefs displayed on app are verified?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    Yes, we perform background verification before onboarding a chef to our platform.
-                                    Same
-                                    is displayed in his/her profile.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- start of one question -->
-                        <ngb-panel title="What kind of chefs are available here?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    We connect you to professional, experienced, well behaved and skilled chefs of all
-                                    different cooking styles and specialties. Spread of chef’s Cuisines specialty are
-                                    diverse such as Italian, Continental, Chinese, Thai, Japanese, Indian etc.
-                                    We are connected to Chefs with specialty of cooking Indian regional cuisines such as
-                                    Punjabi, Gujrati, Rajasthani, South Indian etc.
-
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="How do I use the app?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    a) Download the app (URL) from google play store and search for Jeerapowder
-                                    Or follow this link.
-                                    https://play.google.com/store/apps/details?id=com.jeerapowder.user.
-                                    and Register.
-                                    b) Select Location and time slot.
-                                    c) Browse through the profiles of chefs as per the dishes you like.
-                                    d) Choose the chef.
-                                    e) Choose dishes from the list of items (Starters, Main Course, Accompaniments,
-                                    Desserts).
-                                    f) Apply Coupon code, if any e,g. FIRST99 for 99% of on first booking .
-                                    g) Check total amount and pre-requirements.
-                                    h) Place order by making payment.
-
-                                    Voila! Booking for the chef is done. Get ready for ambrosia to entice your
-                                    taste-buds.
-
-
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="Why does the price of the chefs and cuisines vary profile wise?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    We have dynamic pricing of the menu selected based on multiple parameters such e.g.
-                                    the
-                                    chef’s skillset and professional experience,
-                                    type and complexity of cuisines selected,
-                                    time range it might take,
-                                    location being serviced etc.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="How early can I book for the chef?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    You will be able to book before 48 hours to 72 hours prior to actual service time
-                                    depending on the availability of the chef.
-
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="Can I select more than one starter and one main course?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    You can select as many as you like.
-
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="Can I select more than one starter and one main course?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    You can select as many as you like.
-
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="How many people are allowed in one booking?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    There is no restriction on number of people. However, subtotals will increase as per
-                                    the
-                                    count of people.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="How many people are allowed in one booking?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    There is no restriction on number of people. However, subtotals will increase as per
-                                    the
-                                    count of people.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="How many people are allowed in one booking?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    There is no restriction on number of people. However, subtotals will increase as per
-                                    the
-                                    count of people.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-                        <!-- start of one question -->
-                        <ngb-panel title="What happens if I want to cancel my booking for some reason?">
-                            <ng-template ngbPanelContent>
-                                <div
-                                    [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
-                                    We have policies in place for that. We process your booking as per the cancellation
-                                    policy. Please reach out to customer support section if you need further
-                                    clarification
-                                    or help in this regard.
-                                </div>
-                            </ng-template>
-                        </ngb-panel>
-                        <!-- end of one question -->
-
-
-
-                    </ngb-accordion>
-
-                </div>
-                <!-- end of col -->
-                <div class="col-md-5 offset-md-1 col-sm-12 d-flex align-items-center">
-
-                    <img src="./assets/images/landing/svg/faqs2.svg" class="img-responsive w-100" alt="">
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+</section>
+
+<section class="faqs-wrap p-t-b-80 " id="faqs-wrap">
+    <!-- <app-header></app-header> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-header mb-5">
+                <p>Following are some frequently asked questions.</p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 mb-4 mb-lg-0 mb-md-0  mb-4">
+                <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" activeIds="ngb-panel-0">
+                    <ngb-panel title="I don’t see any chefs around my location">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                We at Jeera Powder are constantly working on growing our fleet of chefs, but
+                                unfortunately to curate the bests it takes some time. Bear with us, and keep checking
+                                your app. We are adding new chefs everyday.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel title="Are the chefs displayed on app are verified?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                Yes, we perform background verification before onboarding a chef to our platform.
+                                Same is displayed in his/her profile.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- start of one question -->
+                    <ngb-panel title="What kind of chefs for hire are available here?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                We connect you to professional, experienced, well behaved and skilled chefs of all
+                                different cooking styles and specialities. There are over a hundered dishes that our
+                                chefs can cook, spread accross mulitple cusines.
+
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="How do I use the app?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                a) Download the app (URL) from google play store and search for Jeerapowder
+                                Or follow this link.
+                                https://play.google.com/store/apps/details?id=com.jeerapowder.user.
+                                and Register.
+                                b) Select Location and time slot.
+                                c) Browse through the profiles of chefs as per the dishes you like.
+                                d) Choose the chef.
+                                e) Choose dishes from the list of items (Starters, Main Course, Accompaniments,
+                                Desserts).
+                                f) Apply Coupon code, if any e,g. FIRST99 for 99% of on first booking .
+                                g) Check total amount and pre-requirements.
+                                h) Place order by making payment.
+
+                                Voila! Booking for the chef is done. The chef would reach your home in time and cook for
+                                you the selected dishes.
+
+
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="Why does the price of the chefs and cuisines vary profile wise?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                We have dynamic pricing of the menu selected based on multiple parameters such e.g.
+                                the chef’s skillset and professional experience,
+                                type and complexity of cuisines selected,
+                                time range it might take,
+                                location being serviced etc.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="How early can I book for the chef?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                You will be able to book before 48 hours to 72 hours prior to actual service time
+                                depending on the availability of the chef.
+
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="Can I select more than one starter and one main course?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                You can select as many as you like.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="How many people are allowed in one booking?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                There is no restriction on number of people. However, subtotals will increase as per
+                                the count of people.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+                    <!-- start of one question -->
+                    <ngb-panel title="What happens if I want to cancel my booking for some reason?">
+                        <ng-template ngbPanelContent>
+                            <div [@animate]="{value:'*',params:{y:'20px',opacity:'0',delay:'0ms', duration: '400ms'}}">
+                                Our cancellation policy is quite simple. Please refer to the Terms of use document.
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <!-- end of one question -->
+
+
+
+                </ngb-accordion>
+
+            </div>
+            <!-- end of col -->
+            <div class="col-md-5 offset-md-1 col-sm-12 d-flex align-items-center">
+
+                <img src="./assets/images/landing/svg/faqs2.svg" class="img-responsive w-100" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 <app-footer></app-footer>
