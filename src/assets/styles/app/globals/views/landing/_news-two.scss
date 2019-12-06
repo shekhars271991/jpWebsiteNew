@@ -1,13 +1,16 @@
 .news-two-wrap {
     .card {
         position: relative;
-        display: flex;
+        display: table-cell;
         flex-direction: row;
         .card-img {
-            width: 100%;
+            padding: 50px;
+           // width: 100%;
             border-radius: 0px;
-            height: 100%;
-            object-fit: fill;
+           // height: 100%;
+            //object-fit: fill;
+            text-align: center;
+            vertical-align: middle;
         }
         .card_right_content {
             h2 {
