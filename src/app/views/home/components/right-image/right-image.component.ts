@@ -9,27 +9,27 @@ export class RightImageComponent implements OnInit {
   public carouselTileItems: Array<any> = [
     {
       // photo: "./assets/images/landing/app_screenshots/550/01.png"
-      photo: "./assets/images/landing/svg/page1.png"
+      photo: "./assets/images/landing/app_screenshots/landing1.png"
     },
     {
-      photo: "./assets/images/landing/svg/page2.png"
+      photo: "./assets/images/landing/app_screenshots/serviceProfile1.png"
       // photo: "./assets/images/landing/app_screenshots/550/02.png"
     },
     {
-      photo: "./assets/images/landing/svg/page3.png"
+      photo: "./assets/images/landing/app_screenshots/cart1.png"
       // photo: "./assets/images/landing/app_screenshots/550/03.png"
     },
     {
       photo: "./assets/images/landing/svg/step6.png"
       // photo: "./assets/images/landing/app_screenshots/550/04.png"
-    },    
+    },
   ];
   public carouselTiles = {
     0: [],
     1: [],
     2: [],
     3: [],
-    
+
   };
   public carouselTile: NguCarouselConfig = {
     grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
@@ -43,43 +43,43 @@ export class RightImageComponent implements OnInit {
       initialDelay: 1000
     },
     load: 1,
-    loop:true,
+    loop: true,
     velocity: 0,
     touch: true,
     easing: "cubic-bezier(0, 0, 0.2, 1)"
   };
-  isSelected:number;
-   counter:number;
+  isSelected: number;
+  counter: number;
   isLeftButtonDisabled;
-   isRightButtonDisabled;
-  
+  isRightButtonDisabled;
+
 
   constructor() {
-    this.isSelected=1;
-    this.counter=1; 
-  
+    this.isSelected = 1;
+    this.counter = 1;
+
   }
 
-  onmoveFn(data: NguCarouselStore) {   
+  onmoveFn(data: NguCarouselStore) {
     this.counter++;
-    if(this.counter>4){
-      this.counter=1;
+    if (this.counter > 4) {
+      this.counter = 1;
     }
     //this.disableButton();
-    this.isSelected=this.counter;   
-  
+    this.isSelected = this.counter;
+
   }
-  setCounter(){
-    this.counter-=2;
-    if(this.counter<0){
-      this.counter=3;
+  setCounter() {
+    this.counter -= 2;
+    if (this.counter < 0) {
+      this.counter = 3;
     }
     console.log("prev val");
   }
 
- 
+
   ngOnInit() {
-   
-    
+
+
   }
 }
