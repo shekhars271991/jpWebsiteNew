@@ -23,29 +23,27 @@
                 </div>
 
 
-                <div>
-                    <!-- <img src="./assets/images/google-play-badge.svg" id="google-play-img" class="img-responsive phone-img" alt=""
-                        [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}">  -->
+                <!-- <div>
+
                     <a href="https://play.google.com/store/apps/details?id=com.jeerapowder.user&hl=en"
                         target="_blank"><img src="./assets/images/google-play-badge.svg" id="google-play-img"
                             class="img-responsive phone-img" alt=""
                             [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}">
                     </a>
-                </div>
-                <!-- <div class="intro-six-Buttons">
-                    <a name="" id="" routerLink="/sessions/signin"
-                        class="btn btn-outline-white btn-lg pl-5 pr-5 pb-2  mr-2 mb-4 text-uppercase half-button"
-                        href="#" role="button">
-
-                        Sign in
-                    </a>
-                    <a id="" routerLink="/sessions/signup" class="btn btn-warning btn-lg pl-5 pr-5 pb-2 mb-4 text-uppercase 
- half-button" href="#" role="button">
-
-                        Sign up
-                    </a>
-
                 </div> -->
+                <div class="row">
+                    <div class="column" (click)="openPlayStore()">
+                        <img src="./assets/images/google-play-badge.svg" id="google-play-img"
+                            alt=""
+                            [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}">
+                    </div>
+                    <div class="column" (click)="openAppStore()">
+                        <img src="./assets/images/appStore3.png" id="app-store-img"
+                            alt=""
+                            [@animate]="{value:'*',params:{x:'200px',opacity:'0',delay:'100ms', duration: '500ms'}}">
+                    </div>
+                </div>
+
 
             </div>
             <div class="col-md-6 intro-six-RightSection d-flex align-items-center" id="google-play-img">

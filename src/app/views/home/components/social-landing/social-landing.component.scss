@@ -1,15 +1,41 @@
 .bg-image {
-    background-image: url("~/assets/images/header.jpg");
-    background-repeat:no-repeat;
-// background-size:contain;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:cover;
-overflow: hidden;
-position: relative;
+  background-image: url("~/assets/images/header.jpg");
+  background-repeat: no-repeat;
+  // background-size:contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: cover;
+  overflow: hidden;
+  position: relative;
 }
-#google-play-img{
-        width:60%; 
+#google-play-img {
+  width: 100%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+#app-store-img {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 60%;
+  }
 }
